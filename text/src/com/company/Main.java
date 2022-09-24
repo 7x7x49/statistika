@@ -10,7 +10,7 @@ public class Main {
         System.out.print((char) 27 + "[33mEnter the path to the file: "+ (char)27 + "[0m");
         Scanner in = new Scanner(System.in);
         String path = in.nextLine();                 //путь до файла, который нужно прочитать
-        Pattern pattern = Pattern.compile(" ");      //создание РВ (ищет пробел)
+        Pattern pattern = Pattern.compile(" ");     
 
         try(FileInputStream fis = new FileInputStream(path);    //файл, который собираемся анализировать
             FileWriter fileWriter = new FileWriter("WithoutComments.txt")){
